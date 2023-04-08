@@ -9,6 +9,6 @@ data:
     <html>
     <h1>Welcome</h1>
     </br>
-    <h1>Hi! I got deployed in {{ .Values.env.name }} Environment using Helm Chart {{ .Chart.Name }}-{{ .Chart.Version }} </h1>
+    <h1>Hi! I got deployed in {{ .Values.env.name }} Environment using Helm Chart {{ .Chart.Name }}-{{ .Chart.Version }} from Library Release: {{ .Release.Name }}-{{ .Release.Version }} Library: {{ .library-chart.Name }}-{{ .library-chart.Version }} </h1>
     </html
 {{- end }}
