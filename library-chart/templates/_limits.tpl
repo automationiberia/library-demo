@@ -1,4 +1,4 @@
-{{ define "library-chart._limits" }}
+{{ define "library-chart.limits" }}
 apiVersion: v1
 kind: LimitRange
 metadata:
