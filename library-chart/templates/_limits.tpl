@@ -1,4 +1,4 @@
-{{ define "library-chart.resourcequota" }}
+{{ define "library-chart._limits" }}
 apiVersion: v1
 kind: LimitRange
 metadata:
@@ -11,6 +11,6 @@ spec:
     - default:
         memory: {{ .Values.limits.default.memory }}
       defaultRequest:
-        memory: {{ .Values.limits.defaultrequest.memory }}
+        memory: {{ .Values.limits.defaultRequest.memory }}
       type: Container
 {{- end }}
