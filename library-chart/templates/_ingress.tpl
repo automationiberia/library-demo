@@ -1,4 +1,5 @@
 {{ define "library-chart.ingress" }}
+{{- if .Values.global.cluster.aws -}}
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
@@ -13,4 +14,5 @@ spec:
     kind: Service
     name: {{ .Release.Name }}-service
     weight: 100
+{{- end -}}
 {{- end }}
