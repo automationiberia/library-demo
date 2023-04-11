@@ -15,4 +15,4 @@ spec:
     name: {{ .Release.Name }}-service
     weight: 100
 {{- end }}
-{{ end }}
+{{- end }}
